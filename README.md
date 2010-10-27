@@ -13,6 +13,7 @@
 
 ## Limits ##
 * currently test files should be placed in the same folder as the extension files
+* returned cookies are not kept, ie not send in further requests
 
 ## Usage examples ##
 ### basic functions ###
@@ -37,8 +38,10 @@ _file pythonModuleName.py_
             
 *Note that response is object*
 The response from the last assertGet* or assertPost* is piped to xml2obj method and then its result is given to module's method in question
+
 keyvalues is a Dictionary within the executing rest context, and its key->values pairs are used to replace any found matches on every assert* statements
 
 ## TODO/Roadmap ##
 * provide support to separete the test files with the python code and extensions to twill
 * provide python documentation(?)
+* use true RESTclient python implementation (http://code.google.com/p/python-rest-client2/)
