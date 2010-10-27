@@ -15,6 +15,12 @@
 * currently test files should be placed in the same folder as the extension files
 * returned cookies are not kept, ie not send in further requests
 
+## Getting started ##
+* install twill via easy_install 
+* create a target folder and extract twillRest sources there
+* create empty file in the target folder and write down your functional/integration tests
+* execute from command line within the target folder _twill-sh myTestFile_
+
 ## Usage examples ##
 ### basic functions ###
     extend_with rest
@@ -26,6 +32,7 @@
     assertPostNotContains something http://domain/user/2 field1=value&field2=value&field3=value
     assertFileUploadContains something http://domain/user/picture file ./picture.png
     assertFileUploadNotContains something http://domain/user/picture file ./picture.png
+    
 ### maintaining state ###
 _file test_
     assertGetContains something http://domain/auth
