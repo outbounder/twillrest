@@ -51,4 +51,3 @@ keyvalues is a Dictionary within the executing rest context, and its key->values
 ## TODO/Roadmap ##
 * provide support to separete the test files with the python code and extensions to twill
 * provide python documentation(?)
-* use true RESTclient python implementation (http://code.google.com/p/python-rest-client2/)
